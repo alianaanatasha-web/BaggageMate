@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F7FB">
+
+    <!-- About Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAbout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#F28C28"
+        android:title="About BaggageMate"
+        android:titleTextColor="#FFFFFF" />
+
+    <!-- About Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About BaggageMate"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#16324F"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BaggageMate is a mobile application designed to estimate excess baggage charges based on baggage weight, ticket class, and the rate per excess kilogram. It also calculates 8% service tax and the total amount payable."
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STUDENT INFORMATION"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#16324F"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Name: Nurul Aliana Natasha Hussain\nStudent ID: 2024205604\nProgramme Code: CDCS2405B"
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPLICATION WEBSITE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#16324F"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="https://github.com/alianaanatasha-web/BaggageMate"
+                android:textSize="16sp"
+                android:textColor="#168AAD"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 BaggageMate. All rights reserved."
+                android:textSize="13sp"
+                android:textColor="#607D8B"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
